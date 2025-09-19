@@ -86,9 +86,5 @@ mod log {
     };
 }
 
-// Include wasm entry point for wasm32-unknown-unknown
-#[cfg(all(target_arch = "wasm32", target_os = "unknown"))]
-mod wasm;
-
 #[cfg(test)]
 mod tests;
